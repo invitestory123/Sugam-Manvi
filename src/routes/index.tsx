@@ -15,8 +15,8 @@ import { Venue } from "@/components/invite/Venue";
 import { invite } from "@/config/invite";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
-const title = `${invite.groom} & ${invite.bride} — ${invite.dayLine}`;
-const description = `With the divine blessings of our elders, the Gupta family cordially invites you to celebrate the wedding festivities of ${invite.groom} & ${invite.bride} on ${invite.dayLine}.`;
+const title = `${invite.bride} & ${invite.groom} — ${invite.dayLine}`;
+const description = `With the divine blessings of our elders, the Sahu family cordially invites you to celebrate the wedding festivities of ${invite.bride} & ${invite.groom} on ${invite.dayLine}.`;
 
 export const Route = createFileRoute("/")({
   head: () => ({

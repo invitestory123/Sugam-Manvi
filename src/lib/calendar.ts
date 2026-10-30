@@ -26,12 +26,12 @@ export function downloadIcs() {
     "PRODID:-//wedding-invite//EN",
     "CALSCALE:GREGORIAN",
     "BEGIN:VEVENT",
-    `UID:${startStamp}-wedding@sugam-manvi`,
+    `UID:${startStamp}-wedding@manvi-sugam`,
     `DTSTAMP:${startStamp}`,
     `DTSTART:${startStamp}`,
     `DTEND:${endStamp}`,
     `SUMMARY:${invite.eventTitle}`,
-    `DESCRIPTION:${invite.invitationNote} - Haldi (23 Nov 12 PM), Brother's Cocktail (23 Nov 7 PM) & Wedding Ceremony (24 Nov 8:30 PM Baraat)`,
+    `DESCRIPTION:${invite.invitationNote} - Haldi (23 Nov 12 PM), Cocktail (23 Nov 7 PM) & Wedding Ceremony (24 Nov 8:30 PM Baraat)`,
     `LOCATION:${invite.venue.name}\\, ${invite.venue.address}`,
     "BEGIN:VALARM",
     "TRIGGER:-P1D",
@@ -48,7 +48,7 @@ export function downloadIcs() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = "Sugam-Manvi-Wedding.ics";
+  a.download = "Manvi-Sugam-Wedding.ics";
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);

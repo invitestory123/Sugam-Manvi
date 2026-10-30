@@ -29,7 +29,7 @@ export function ActionBar() {
   const share = async () => {
     tap();
     const data = {
-      title: `${invite.groom} & ${invite.bride}`,
+      title: `${invite.bride} & ${invite.groom}`,
       text: `You're invited — ${invite.dayLine}, ${invite.venue.name}`,
       url: typeof window !== "undefined" ? window.location.href : "",
     };

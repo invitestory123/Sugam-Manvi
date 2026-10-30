@@ -43,9 +43,9 @@ export function InviteFooter() {
         </motion.p>
 
         <p className="script mt-5 text-5xl leading-[1.1] text-ink sm:text-6xl">
-          <ScriptNames text={invite.groom} />
+          <ScriptNames text={invite.bride} />
           <span className="mx-3 text-gold">&</span>
-          <ScriptNames text={invite.bride} delay={0.3} />
+          <ScriptNames text={invite.groom} delay={0.3} />
         </p>
 
         <motion.p

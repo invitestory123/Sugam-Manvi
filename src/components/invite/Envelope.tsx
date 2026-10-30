@@ -23,7 +23,7 @@ export function Envelope({
 }) {
   const reduced = useReducedMotion();
   const [state, setState] = useState<"sealed" | "breaking" | "gone">("sealed");
-  const monogram = `${invite.groom[0]}${invite.bride[0]}`;
+  const monogram = `${invite.bride[0]}${invite.groom[0]}`;
 
   useEffect(() => {
     lockScroll();
@@ -89,7 +89,7 @@ export function Envelope({
           <p className="script mt-4 text-[3rem] leading-tight text-ink sm:text-[3.75rem]">
             You&apos;re invited
           </p>
-          <p className="caps mt-3 text-[0.5rem] text-olive/80">{invite.groom} &amp; {invite.bride}</p>
+          <p className="caps mt-3 text-[0.5rem] text-olive/80">{invite.bride} &amp; {invite.groom}</p>
           {/* reserved space for the wax seal that sits on the split line */}
           <div aria-hidden="true" className="h-64 shrink-0" />
           <Flourish className="w-24 rotate-180 text-gold/50" />

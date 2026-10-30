@@ -73,12 +73,21 @@ export function Hero({ ready = true }: { ready?: boolean }) {
       </motion.p>
 
       <motion.p
-        className="script mt-3 text-5xl tracking-[0.06em] text-ink sm:text-6xl"
+        className="font-serif mt-2 text-3xl font-light tracking-[0.16em] text-ink sm:text-4xl"
         initial={{ opacity: 0, y: 16 }}
         animate={ready ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
         transition={{ duration: 1.1, delay: 0.2, ease }}
       >
         {invite.dateLabel}
+      </motion.p>
+
+      <motion.p
+        className="caps mt-1 text-[0.55rem] text-olive tracking-widest"
+        initial={{ opacity: 0 }}
+        animate={ready ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1, delay: 0.3 }}
+      >
+        {invite.weddingDayLabel}
       </motion.p>
 
       {/* Couple portrait in royal arched frame */}
@@ -90,7 +99,7 @@ export function Hero({ ready = true }: { ready?: boolean }) {
           <div className="overflow-hidden rounded-t-[132px] rounded-b-xl">
             <motion.img
               src={coupleImg}
-              alt={`${invite.groom} & ${invite.bride}`}
+              alt={`${invite.bride} & ${invite.groom}`}
               width={683}
               height={1024}
               draggable={false}
@@ -121,9 +130,9 @@ export function Hero({ ready = true }: { ready?: boolean }) {
         initial="hidden"
         animate={anim}
       >
-        <ScriptNames text={invite.groom} delay={0.85} trigger={anim} />
+        <ScriptNames text={invite.bride} delay={0.85} trigger={anim} />
         <span className="mx-3 text-gold sm:mx-5">&</span>
-        <ScriptNames text={invite.bride} delay={1.2} trigger={anim} />
+        <ScriptNames text={invite.groom} delay={1.2} trigger={anim} />
       </motion.h1>
 
       <motion.button

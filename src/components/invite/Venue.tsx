@@ -23,7 +23,7 @@ const venues = [
     name: "Mohali Golf Range",
     city: "Mohali",
     address: "Sector 65, Mohali, Punjab",
-    events: "Haldi & Brother's Cocktail (23rd Nov)",
+    events: "Haldi & Cocktail (23rd Nov)",
     query: "Mohali Golf Range, Sector 65, Mohali",
   },
 ];
